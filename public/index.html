@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Randomizer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="h-screen flex items-center justify-center">
+  <main class="relative min-h-24 flex flex-col space-y-6 min-w-[600px] py-8 px-8 rounded-lg shadow-xl">
+    <h1 class="text-3xl font-bold text-center mb-24">RANDOMIZER</h1>
+
+    <ul id="words"></ul>
+
+    <form id="form" class="space-y-4">
+      <input type="text" placeholder="New word/name" class="w-full px-4 py-2 block outline outline-1">
+      <button type="submit" class="w-full bg-green-300 px-4 py-2">Add</button>
+    </form>
+
+    <button id="randomize" class="w-full bg-orange-300 px-4 py-2">Randomize</button>
+
+    <div id="randomized"></div>
+
+    <button id="view-history" class="bg-green-300 px-4 py-2">View History</button>
+
+
+    <div id="history" class="absolute top-1/2 -translate-y-1/2 bg-white px-8 py-4 shadow-lg hidden">
+
+      <button id="close-history" class="absolute top-0 right-0 bg-red-300 px-4 py-2">X</button>
+
+      <h2 class="text-2xl font-bold">History</h2>
+
+      <ul id="history-list" class="mt-4"></ul>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
